@@ -75,8 +75,6 @@ body{
     /*border: 1px solid deeppink;*//* pomocznicza ramka*/
 }
 
-
-
 /*-------------------------------------------------------------------------------
 HEADER
 ----------------------------------------------------------------------------------*/
@@ -89,8 +87,6 @@ HEADER
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
-    /*word-spacing: 4px;*/
-
 }
 
 .header-logo{
@@ -150,7 +146,6 @@ SECTION CHAIR
     top: 178px;
     font-size: 75px;
     padding-left: 115px;
-
 }
 
 .arrow-right{
@@ -159,7 +154,6 @@ SECTION CHAIR
     top: 178px;
     font-size: 75px;
     padding-right: 125px;
-
 }
 
 .black-chair{
@@ -198,7 +192,6 @@ SECTION CHAIR
     text-transform: uppercase;
     font-size: 24px;
     font-family: 'Raleway', sans-serif;
-    /*word-spacing: 6px;*/
     color:white;
     padding-left: 17px;
 }
@@ -289,6 +282,191 @@ SECTION FOTOS
 /*--------------------------------------------------------------------------------------
 SECTION PRICE
 ----------------------------------------------------------------------------------------*/
+
+.section-price{
+    height: 709px;
+    background-color: #cccccc;
+    padding-top: 15px;
+}
+
+.price-first-col,
+.price-second-col,
+.price-third-col{
+    float: left;
+    width: 328px;
+    height: 498px;
+    border: 1px solid black;
+    margin-top: 66px;
+    margin-right: 30px;
+    position: relative;
+}
+
+.price-third-col{  /* pozycja 3 kolumny*/
+    position: absolute;
+    right: -25px;
+    top: 0;
+}
+
+.header-underline{
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 10px;
+    max-width: 100%;
+    position: relative;
+}
+
+.header-underline::after{ /* pozycja linie pod hederem*/
+    content: "";
+    position: absolute;
+    border: 3px solid green;
+    width:315px;
+    top: 40px;
+    left: 0;
+}
+
+
+.header-price{
+    max-width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+
+.price {  /* koło z cena*/
+    width: 130px;
+    height: 130px;
+    border: 1px solid red;
+    border-radius: 50%;
+    margin: auto auto;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.price p{
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.price p:last-child{
+    font-size: 18px;
+    padding-bottom: 555px;
+}
+sup{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.price-text{
+    max-width: 100%;
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.button-price{
+    width: 121px;
+    height: 34px;
+    margin-left: 105px;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.price-first-col .button-price{
+    margin-top: 106px;
+}
+
+.price-second-col .button-price{
+    margin-top: 53px;
+}
+
+.price-first-col::before{
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    border: 1px solid black;
+    border-radius: 50%;
+    top: -38.5px;
+    left: 136.5px;
+}
+.price-first-col::after{
+    content: "";
+    position: absolute;
+    width: 26.5px;
+    height: 26.5px;
+    border: 1px solid black;
+    border-radius: 50%;
+    left: 150px;
+    top: -26.5px;
+}
+
+.price-second-col::before{
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    border: 1px solid black;
+    border-radius: 50%;
+    top: -38.5px;
+    left: 136.5px;
+}
+
+.price-second-col::after{
+    content: "";
+    position: absolute;
+    width: 26.5px;
+    height: 26.5px;
+    border: 1px solid black;
+    border-radius: 50%;
+    left: 150px;
+    top: -26.5px;
+}
+
+.price-third-col::before{
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    border: 1px solid black;
+    border-radius: 50%;
+    top: -38.5px;
+    left: 136.5px;
+}
+
+.price-third-col::after{
+    content: "";
+    position: absolute;
+    width: 26.5px;
+    height: 26.5px;
+    border: 1px solid black;
+    border-radius: 50%;
+    left: 150px;
+    top: -26.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*--------------------------------------------------------------------------------------
