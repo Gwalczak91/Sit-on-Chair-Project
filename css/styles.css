@@ -77,8 +77,6 @@ body{
 
 
 
-
-
 /*-------------------------------------------------------------------------------
 HEADER
 ----------------------------------------------------------------------------------*/
@@ -139,28 +137,9 @@ SECTION CHAIR
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(230,224,245,1) 76%, rgba(218,213,241,1) 84%, rgba(207,205,239,1) 92%, rgba(207,205,239,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cfcdef', GradientType=0 );
 
-
-}
-
-/*.section-chair-col-one,
-.section-chair-col-two{
-    width: 50%;
-    float: left;
-}
-
-.section-chair-col-one,
-.section-chair-col-two::after{
-    content: "";
-    clear: both;
-    display: block;
 }
 
 .section-chair>.container{
-    position: relative;
-    height: 505px;
-}*/
-
-.section-chair>.container {
     position: relative;
     height: 505px;
 }
@@ -228,6 +207,83 @@ SECTION CHAIR
 /*--------------------------------------------------------------------------------------
 SECTION FOTOS
 ---------------------------------------------------------------------------------------*/
+
+.section-fotos{
+    height: 350px;
+}
+
+.col-3-layout{
+    position: relative;
+}
+
+.section-fotos-col-one,
+.section-fotos-col-two,
+.section-fotos-col-three{
+    width: 33%;
+    display:inline-block;
+    margin-top: 25px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.section-fotos-col-three{
+    position: absolute;
+    padding: 0 0;
+    border: 1px solid gray;
+    width: 280px;
+    padding-left: 15px;
+    padding-right: 35px;
+    padding-top: 9px;
+}
+
+.header-with-border-three::after{
+    content: "";
+    position: absolute;
+    border: 3px solid green;
+    width:130px;
+    top: 50px;
+    left: 15px;
+}
+
+.header-with-border-one{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 18px;
+    padding-bottom: 23px;
+    padding-top: 20px;
+    background-color: rgba(255,255,255,0.5);
+    width: 328px;
+}
+
+.header-with-border-one::after{
+    content: "";
+    position: absolute;
+    border: 3px solid green;
+    width:130px;
+    bottom: 15px;
+    left: 15px;
+}
+
+.header-with-border-two{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 10px;
+    padding-bottom: 23px;
+    padding-top: 20px;
+    background-color: rgba(255,255,255,0.5);
+    width: 328px;
+}
+
+.header-with-border-two::after{
+    content: "";
+    position: absolute;
+    border: 3px solid green;
+    width:130px;
+    bottom: 15px;
+    left: 10px;
+}
 
 
 /*--------------------------------------------------------------------------------------
