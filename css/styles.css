@@ -68,12 +68,14 @@ body{
 }
 
 .container{ /*ustawienia kontenera pozycjonujacego*/
+    position: relative;
     max-width: 100%;
     margin: 0 auto;
     padding-left: 110px;
     padding-right: 120px;
     /*border: 1px solid deeppink;*//* pomocznicza ramka*/
 }
+
 
 /*-------------------------------------------------------------------------------
 HEADER
@@ -307,24 +309,6 @@ SECTION PRICE
     top: 0;
 }
 
-.header-underline{
-    text-transform: uppercase;
-    font-weight: 400;
-    padding-top: 10px;
-    max-width: 100%;
-    position: relative;
-}
-
-.header-underline::after{ /* pozycja linie pod hederem*/
-    content: "";
-    position: absolute;
-    border: 3px solid green;
-    width:315px;
-    top: 40px;
-    left: 0;
-}
-
-
 .header-price{
     max-width: 100%;
     text-transform: uppercase;
@@ -451,32 +435,151 @@ sup{
     top: -26.5px;
 }
 
+.header-underline{
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 10px;
+    max-width: 100%;
+    position: relative;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.header-underline::after{ /* pozycja linie pod hederem*/
+    content: "";
+    position: absolute;
+    border: 3px solid green;
+    width:315px;
+    top: 40px;
+    left: 0;
+}
 
 
 /*--------------------------------------------------------------------------------------
 SECTION FORM
 --------------------------------------------------------------------------------------------*/
+.section-form{
+    max-width: 100%;
+    height: 490px;
+}
+
+.section-form-text{/* pozycjonowanie sekcji z formularzem do wypełnienia*/
+    width: 634px;
+    float: left;
+    margin-top: 38px;
+    height: 375px;
+
+}
+
+.section-form-checkbox{ /* pozycjonowanie sekcji z fotelem i zgoda na przetwarzaniedanych*/
+    width: 342px;
+    float: left;
+    height: 375px;
+    margin-top: 38px;
+    position: relative;
+
+}
+
+.section-form-text *{ /* oscylowanie pol do wypełnienia*/
+    width: 615px;
+    height: 60px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+    padding-left: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+.section-form-text textarea{ /* oscylowanie textarea*/
+    padding-top: 15px;
+    padding-bottom: 115px;
+}
+
+.header-underline-form{  /* oscylowanie nagłówka sekcji*/
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 10px;
+    max-width: 100%;
+    position: relative;
+    padding-left: 5px;
+}
+
+.header-underline-form::after{ /* pozycja linie pod hederem*/
+    content: "";
+    position: absolute;
+    border: 3px solid green;
+    width:315px;
+    top: 45px;
+    left: 6px;
+}
+
+.red-chair{ /*pozycjonowanie krzesła*/
+   position: absolute;
+   top: -25px;
+   left: 75px;
+}
+
+.checkbox-form{ /* pozycjonowanie checkboxa*/
+    position: absolute;
+    top: 210px;
+    left: 55px;
+    width: 50px;
+    height: 50px;
+
+}
+
+.checkbox-form-info{ /* pozycjonowanie zgody*/
+    position: absolute;
+    top: 218px;
+    left: 125px;
+    font-size: 16px;
+}
+
+.send-form{ /* oscylowanie i pozycjonowanie znacznika wyslij*/
+    position: absolute;
+    bottom: 5px;
+    right: -60px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    width: 342px;
+    height: 71px;
+    border: 1px solid red;
+    border-radius: 10px;
+    font-size: 32px;
+    font-weight: 700;
+}
 
 /*------------------------------------------------------------------------------------------
 FOOTER
 --------------------------------------------------------------------------------------------*/
 
+.main-footer {
+   margin-top: 58px;
+   height: 110px;
+}
 
+.footer-copyright{
+    position: absolute;
+    word-spacing: 5px;
+    bottom: -40px;
+}
+
+.all-logos{
+    display: inline-block;
+    position: absolute;
+    left: 807px;
+    bottom: -44px;
+}
+
+.footer-logo{
+    position: absolute;
+    right: 123px;
+    bottom: -40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 20px;
+    word-spacing: 4px;
+}
+
+.footer-logo *{
+    font-weight: 700;
+}
 
 
