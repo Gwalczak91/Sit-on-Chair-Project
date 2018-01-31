@@ -1,0 +1,22 @@
+/*-------------------------------------------------------------------------
+CLEARFIX
+--------------------------------------------------------------------------*/
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*----------------------------------------------------------------------
+LAYOUT
+------------------------------------------------------------------------*/
+
+.container{ /*ustawienia kontenera pozycjonujacego*/
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 110px;
+  padding-right: 120px;
+  //border: 1px solid deeppink; /*pomocznicza ramka*/
+}

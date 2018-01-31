@@ -1,0 +1,45 @@
+
+.section-fotos .container { /* style kontenera*/
+  display: flex;
+  height: 322px;
+  padding-top: 28px;
+  position: relative;
+}
+
+.section-fotos-one,
+.section-fotos-two { /* style zdjec*/
+  margin-right:28px;
+  position: relative;
+}
+
+.section-fotos-header-foto { /* style naglowka w zdjeciu*/
+  @include section-fotos-headers
+}
+
+.section-fotos-header-foto::after { /* style podkreslnika pod naglowkiem*/
+  @include section-fotos-headers-underline
+}
+
+.section-fotos-text{ /* rozmieszczenie elementów w kolumnie trzeciej*/
+  height: 242px;
+  padding-left: 20px;
+  padding-right: 35px;
+  padding-top: 10px;
+  border: 1px solid #D9D9D9;
+  position: relative;
+}
+
+.section-fotos-text p{ /* styl paragrafu*/
+  line-height: 22px;
+  font-size: 13px;
+  color: #5B5B5B;
+}
+
+.section-fotos-text-header::after{ /* styl podkreslinka pod naglowkiem w w foto-text*/
+  content: "";
+  position: absolute;
+  border: 3px solid #00CFA5;
+  width:130px;
+  top: 50px;
+  left: 20px;
+}
