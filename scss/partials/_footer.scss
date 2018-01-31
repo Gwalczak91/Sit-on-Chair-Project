@@ -1,0 +1,32 @@
+.main-footer {
+  margin-top: 58px;
+  height: 110px;
+  color: #B5B5B5;
+}
+
+.footer-copyright{
+  position: absolute;
+  word-spacing: 5px;
+  bottom: -40px;
+}
+
+.all-logos{
+  display: inline-block;
+  position: absolute;
+  left: 807px;
+  bottom: -44px;
+}
+
+.footer-logo{
+  position: absolute;
+  right: 123px;
+  bottom: -40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  word-spacing: 4px;
+}
+
+.footer-logo *{
+  font-weight: 700;
+}

@@ -1,0 +1,178 @@
+.section-price {
+  height: 710px;
+  background-color: #F1F1F1;
+  padding-top: 15px;
+}
+
+.header-underline {   /* oscylowanie i pozycja nagłowka sekcji CENNIK*/
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-top: 10px;
+  max-width: 100%;
+  position: relative;
+}
+
+.header-underline::after { /* pozycja lini pod nagłówkiem CENNIK*/
+  content: "";
+  position: absolute;
+  border: 3px solid #00CFA5;
+  width:315px;
+  top: 40px;
+  left: 0;
+}
+
+.section-price-3-col { /* pozycjonowanie kolumn*/
+  display: flex;
+}
+
+.price-first-col,
+.price-second-col,
+.price-third-col {    /* obramowanie i pozycja kolumn z cenami*/
+  width: 326px;
+  height: 498px;
+  border: 2px solid #D4D4D4;
+  position: relative;
+  margin-top: 65px;
+}
+
+.price-second-col,
+.price-third-col {      /* odstepy miedzy kolumnami*/
+  margin-left: 30px;
+}
+
+.price-second-col {   /* kolumna druga ma inny kolor obramowania*/
+  border: 2px solid #00D2AE;
+}
+
+.header-price {  /* nagłowki w kolumnach z cena*/
+ @include header-price;
+}
+
+.price-second-col .header-price { /* naglowek w kolumnie 2 ma inny kolor*/
+  color: white;
+}
+
+.price {  /* oscylowanie koła z cena*/
+  width: 130px;
+  height: 130px;
+  border: 2px solid #D4D4D4;
+  border-radius: 50%;
+  margin: auto auto;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #D4D4D4;
+  background-color: white;
+  font-weight: 700;
+}
+
+.price-second-col .price { /* cena w kolumnie 2 jest innego koloru*/
+  color: #00D2AE;
+  border: 2px solid #00D2AE;
+}
+
+.price-in-circle {    /*   oscylowanie ceny w kolkach*/
+  font-size: 45px;
+  padding-top: 20px;
+  margin: 0;
+
+  sup {
+    font-size: 18px;
+  }
+}
+
+.currency {  /* pozycjonowanie pln/msc*/
+  margin: 0;
+}
+
+.price-text{ /*  oscylowanie tekstu w kolumnach*/
+  max-width: 100%;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color:#9B9B9B;
+}
+
+.price-text:nth-child(2n+1){
+  background-color: #E3E3E3;
+}
+.price-text:nth-child(2n){
+  background-color: #F1F1F1;
+}
+.price-second-col .price-text:nth-child(2n+1){
+  background-color: white;
+}
+
+.button-price{    /* pozycja i oscylowanie przycisku na dole kazdej kolumny*/
+  width: 121px;
+  height: 34px;
+  margin-left: 105px;
+  border-radius: 8px;
+  border: 1px solid #00D2AE;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #00D2AE;
+  color: white;
+}
+.price-first-col .button-price{
+  margin-top: 106px;
+}
+
+.price-second-col .button-price{
+  margin-top: 60px;
+  background-color: white;
+  color: #00D2AE;
+}
+
+.price-third-col .button-price{
+  margin-top: 13px;
+}
+
+.price-first-col{  /* tło kolumny pierwszej oraz pozycje i kolory/tlo pseudoelementów*/
+  background-color: #F9F9F9;
+}
+.price-first-col::before{ /* duze kolko*/
+  @include bigCircleBefore;
+  border: 2px solid #D4D4D4;
+  background-color: white;
+}
+.price-first-col::after{/*male kolko*/
+  @include smallCircleAfter;
+  border: 1px solid #D4D4D4;
+  background-color: #D4D4D4;
+}
+
+.price-second-col{  /* tło kolumny drugiej oraz pozycje i kolory/tlo pseudoelementów*/
+  background-color: #00D2AE;
+}
+
+.price-second-col::before{/* duze kolko*/
+  @include bigCircleBefore;
+  border: 2px solid #00D2AE;
+  background-color: #00D2AE;
+}
+
+.price-second-col::after{/*male kolko*/
+  @include smallCircleAfter;
+  border: 1px solid #00D2AE;
+  background-color: white;
+}
+
+.price-third-col{   /* tło kolumny trzeciej oraz pozycje i kolory/tlo pseudoelementów*/
+  background-color: #F9F9F9;
+}
+
+.price-third-col::before{/* duze kolko*/
+  @include bigCircleBefore;
+  border: 2px solid #D4D4D4;
+  background-color: white;
+}
+
+.price-third-col::after{ /*male kolko*/
+  @include smallCircleAfter;
+  border: 1px solid #D4D4D4;
+  background-color: #D4D4D4;
+}
