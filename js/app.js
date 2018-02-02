@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function(){
             }else if (this == panelElementsOne[2]){
                 titleValue[0].innerHTML = 435;
             }
-            sum.innerText = Number(titleValue[0].innerHTML) + Number(titleValue[1].innerHTML) + Number(titleValue[2].innerHTML) + Number(titleValue[3].innerHTML);
+            sum.innerText = Number(titleValue[0].innerHTML) + Number(titleValue[1].innerHTML) + Number(titleValue[2].innerHTML) + Number(titleValue[3].innerHTML) + " zl";
         })
     }
 
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function(){
             }else if (this == panelElementsTwo[2]){
                 titleValue[1].innerHTML = 15;
             }
-            sum.innerText = Number(titleValue[0].innerHTML) + Number(titleValue[1].innerHTML) + Number(titleValue[2].innerHTML) + Number(titleValue[3].innerHTML);
+            sum.innerText = Number(titleValue[0].innerHTML) + Number(titleValue[1].innerHTML) + Number(titleValue[2].innerHTML) + Number(titleValue[3].innerHTML) + " zl";
         })
     }
 
@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function(){
             }else if (this == panelElementsThree[1]){
                 titleValue[2].innerHTML = 40;
             }
-            sum.innerText = Number(titleValue[0].innerHTML) + Number(titleValue[1].innerHTML) + Number(titleValue[2].innerHTML) + Number(titleValue[3].innerHTML);
+            sum.innerText = Number(titleValue[0].innerHTML) + Number(titleValue[1].innerHTML) + Number(titleValue[2].innerHTML) + Number(titleValue[3].innerHTML) + " zl";
         })
     }
 
@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function(){
             transport.innerHTML = "";
             titleValue[3].innerHTML = "";
         }
-        sum.innerText = Number(titleValue[0].innerHTML) + Number(titleValue[1].innerHTML) + Number(titleValue[2].innerHTML) + Number(titleValue[3].innerHTML);
+        sum.innerText = Number(titleValue[0].innerHTML) + Number(titleValue[1].innerHTML) + Number(titleValue[2].innerHTML) + Number(titleValue[3].innerHTML) + " zl";
     });
 
 });
